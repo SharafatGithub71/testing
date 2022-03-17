@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">All HD video player</string>
+
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+
+    <string name="storage_permission_denied" tools:ignore="MissingTranslation">Permission to access storage was denied!\n We\'re not able to get your videos!</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_rename" translatable="false">Rename</string>
+    <string name="action_delete" translatable="false">Delete</string>
+
+<!--    <string name="ad_banner" translatable="false">ca-app-pub-9683663487825961/7587123248</string>-->
+<!--    <string name="ad_native" translatable="false">ca-app-pub-9683663487825961/5390181228</string>-->
+<!--    <string name="ad_interstitial" translatable="false">ca-app-pub-9683663487825961/6274041570</string>-->
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intercitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_ad_unit_id">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="ad_banner">ca-app-pub-3940256099942544/6300978111</string>
+        <string name="ad_native">ca-app-pub-3940256099942544/6300978111</string>
+        <string name="ad_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="app_id" translatable="false">ca-app-pub-9683663487825961~1235313793</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="more_apps" translatable="false">More Apps! <font fgcolor='#FFFF3B30'> (Ad)</font></string>
+    <string name="barcode_scanner" translatable="false">Barcode Scanner <font fgcolor='#FFFF3B30'> (Ad)</font> </string>
+    <string name="flashlight" translatable="false">Flashlight <font fgcolor='#FFFF3B30'> (Ad)</font></string>
+    <string name="rate_us" translatable="false">Rate Us! <font fgcolor='#FFFF3B30'> (Ad)</font></string>
+    <string name="share_app" translatable="false">Hi, Global Downloaders has provided Free All HD Videos Player app and found it extremely useful.\n
+    To get it, follow this link: \n</string>
+
+    <string name="action_info" translatable="false">Info</string>
+    <string name="action_play" translatable="false">Play</string>
+    <string name="action_play_popup" translatable="false">Play Popup</string>
+    <string name="action_play_background" translatable="false">Background Audio</string>
+    <string name="action_sort" translatable="false">Sort</string>
+    <string name="action_sort_AZ" translatable="false">A-Z</string>
+    <string name="action_sortZA" translatable="false">Z-A</string>
+    <string name="action_sort_size" translatable="false">Size</string>
+    <string name="action_sort_total_videos" translatable="false">Total Videos</string>
+    <string name="search_title" translatable="false">Search</string>
+    <string name="action_view_by_list" translatable="false">View by list</string>
+    <string name="action_view_by_grid" translatable="false">View by grid</string>
+    <string name="action_share" translatable="false">Share</string>
+
+    <string name="folder" translatable="false">Folder</string>
+    <string name="sleep_timer" translatable="false">Sleep Timer</string>
+    <string name="about" translatable="false">About</string>
+
+    <string name="confirm_cancel" translatable="false">Cancel</string>
+    <string name="enter_new_name" translatable="false">Enter New Name</string>
+    <string name="confirm_delete" translatable="false">Delete</string>
+    <string name="confirm" translatable="false">are you sure you want to delete </string>
+    <string name="delete_video" translatable="false">Delete Video ?</string>
+    <string name="properties" translatable="false">Properties</string>
+    <string name="file_location" translatable="false">Location</string>
+    <string name="format" translatable="false">Format</string>
+    <string name="file_size" translatable="false">Size</string>
+    <string name="duration" translatable="false">Duration</string>
+    <string name="resolution" translatable="false">Resolution</string>
+    <string name="date_added" translatable="false">Date</string>
+
+    <string name="video" translatable="false">Videos</string>
+    <string name="menu" translatable="false">Menu</string>
+    <string name="now_playing" translatable="false">Now Playing</string>
+    <string name="no_video_playing" translatable="false">No video is played</string>
+    <string name="fileNameExist" translatable="false">This file name is existed :(</string>
+    <string name="ThemeColor" translatable="false">Theme Color</string>
+    <string name="setting" translatable="false">Setting</string>
+
+<!--    <string name="more_apps">More Apps! </string>-->
+    <string name="remove_ads">Remove Ads!</string>
+    <string name="video_size">&lt;b>Size: &lt;/b>%1$s</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="start">Start</string>
+    <string name="rename">Rename</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="history">Recent Videos</string>
+    <string name="favorite_videos">Favorite Videos</string>
+    <string name="moreapps_developer">More Apps by Developer</string>
+<!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
+<!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+
+    <string name="title_activity_allvideoactivity">Videos</string>
+    <string name="title_activity_videofolderactivity">Video Folders</string>
+    <string name="title_activity_video_list">HD Video Player</string>
+
+    <string name="title_activity_allaudioactivity">Musics</string>
+
+    <string name="all_audio">Musics</string>
+    <string name="all_folder_audio">Music Folders</string>
+    <string name="all_Videoes">Videos</string>
+    <string name="all_foldervideo">Video Folders</string>
+    <string name="title_activity_audio_list">Musics</string>
+
+
+</resources>

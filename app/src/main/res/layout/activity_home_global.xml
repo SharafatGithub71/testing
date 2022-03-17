@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DrawerActivity"
+    android:background="?attr/background_color"
+    tools:showIn="@layout/app_bar_drawer">
+
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+           android:onClick="listClick"
+            android:id="@+id/btn_listView"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="All Videos List"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btnFolders"
+            android:onClick="forwardClick"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="Directories"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:onClick="gridClick"
+            android:id="@+id/btn_gridView"
+            android:background="@drawable/bg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="All Videos Grid"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tvTitleMainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="?attr/text_color"
+        android:textSize="@dimen/_25sdp" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_video_player"
+            android:icon="@drawable/ic_video"
+            android:title="Video Player" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_moreapps"
+            android:icon="@drawable/ic_moreapps"
+            android:title="@string/more_apps" />
+
+
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@drawable/ic_apps"
+            android:title="@string/barcode_scanner" />
+
+
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share App!" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_review_white_24dp"
+                android:title="@string/rate_us" />
+        </menu>
+    </item>
+
+</menu>

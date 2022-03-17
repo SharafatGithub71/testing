@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_remove_ads"
+            android:icon="@drawable/ic_remove_ads"
+            android:title="@string/remove_ads" />
+        <item
+            android:id="@+id/nav_allvideo"
+            android:icon="@drawable/video"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_videofolder"
+            android:icon="@drawable/folder"
+            android:title="Video Folders" />
+        <item
+            android:id="@+id/nav_allaudio"
+            android:icon="@drawable/audio"
+            android:title="Audios" />
+        <item
+            android:id="@+id/nav_audiofolder"
+            android:icon="@drawable/folder"
+            android:title="Audio Folders" />
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/about"
+            android:title="Privacy policy" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_music"-->
+                <!--android:icon="@drawable/more"-->
+                <!--android:title="Music Player" />-->
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_more"
+                android:icon="@drawable/more"
+                android:title="@string/more_apps" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/fav"
+                android:title="Rate Us!" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:elevation="5dp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="?attr/background_color"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:alpha="0.1"
+                android:background="?attr/text_color" />
+
+            <RelativeLayout
+                android:id="@+id/m_footer"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/image_region"
+                android:background="?attr/background_customize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/imageViewOption"
+
+                    android:layout_toLeftOf="@+id/imageViewOption"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/txtVideoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="You Belong With me that mean you alway belong with me"
+                        android:textColor="?attr/text_color"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtVideoPath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="hello this is the path of the video"
+                        android:textColor="?attr/text_color"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <com.customme.mkplayer.customizeUI.NonScrollImageView
+                    android:id="@+id/imageViewOption"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:visibility="gone"
+                    app:materialIcon="dots_vertical"
+                    app:materialIconColor="?attr/text_color"
+                    app:materialIconSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:alpha="0.1"
+                android:background="?attr/text_color" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/image_region"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/appbar_scrolling_view_behavior"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/txtVideoDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="#000"
+                    android:padding="@dimen/_1sdp"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    tools:text="dfdfdfdf" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

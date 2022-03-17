@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/PrivacyAcceptButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:text="I Accept"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PrivacyAcceptButton"
+        android:layout_margin="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/PrivacyCheckBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/txtPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_marginTop="10dp"
+            android:text="I accept privacy p"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtPrivacyLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:linksClickable="true"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitlePrivacyScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_above="@+id/PrivacyAcceptButton"
+        android:id="@+id/WebCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitlePrivacyScreen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:cardCornerRadius="20dp">
+
+        <ScrollView
+            android:id="@+id/webScrolView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

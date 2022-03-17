@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".VideoFolderActGlory"
+    tools:showIn="@layout/activity_videofolderactivity_glory">
+
+<!--    <com.facebook.ads.NativeAdLayout-->
+<!--        android:padding="@dimen/_3sdp"-->
+<!--        android:background="#CFCFCF"-->
+<!--        android:id="@+id/native_banner_ad_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true" />-->
+
+<!--    android:layout_above="@+id/native_banner_ad_container"-->
+
+    <ListView
+        android:id="@+id/folderListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#ffd3d3d3" />
+
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:padding="50.0dip"
+        android:text="No media found"
+        android:textColor="@android:color/black"
+        android:visibility="visible" />
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        ads:adSize="SMART_BANNER"-->
+<!--        ads:adUnitId="@string/banner_ad_unit_id"/>-->
+<!--    <com.facebook.ads.NativeAdLayout-->
+<!--        android:padding="@dimen/_3sdp"-->
+<!--        android:background="#CFCFCF"-->
+<!--        android:id="@+id/native_banner_ad_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true" />-->
+</RelativeLayout>

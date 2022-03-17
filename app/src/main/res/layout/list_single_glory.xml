@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgBtnListMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="showPopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rel"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <ImageView
+        android:id="@+id/imgFavoriteVideoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="showPopup"
+        app:layout_constraintBottom_toBottomOf="@+id/rel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_un_favorite_24" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:text="Jeena Laga hun Jeena Laga hun Jeena Laga hun Jeena Laga hun Jeena Laga hun Jeena Laga hun Jeena Laga hun Jeena Laga hun"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSize"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnListMore"
+        app:layout_constraintLeft_toRightOf="@+id/rel"
+        app:layout_constraintRight_toLeftOf="@+id/imgBtnListMore"
+        app:layout_constraintStart_toEndOf="@+id/rel"
+        app:layout_constraintTop_toTopOf="@id/rel" />
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/video_size"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/rel"
+        app:layout_constraintLeft_toRightOf="@+id/rel"
+        app:layout_constraintStart_toEndOf="@+id/rel" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="txtTitle,txtSize,rel" />
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rel"
+
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txtduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="#000"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            tools:text="dfdfdfdf" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
