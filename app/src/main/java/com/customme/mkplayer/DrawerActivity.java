@@ -91,7 +91,7 @@ public class DrawerActivity extends AppCompatActivity
             }
         });
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         activity = this;
 
         TextView tvTitle = findViewById(R.id.tvTitleMainScreen);
